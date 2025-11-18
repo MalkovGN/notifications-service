@@ -1,0 +1,80 @@
+[
+{
+  "model": "notifications.notificationtemplate",
+  "pk": 1,
+  "fields": {
+    "code": "example_tg_template",
+    "subject": "subject",
+    "body": "Привет!\r\nСпасибо, что вы с нами!"
+  }
+},
+{
+  "model": "notifications.usercontact",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "channel": "email",
+    "value": "test_user@example.com",
+    "priority": 2,
+    "is_active": true
+  }
+},
+{
+  "model": "notifications.usercontact",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "channel": "sms",
+    "value": "+79011010101",
+    "priority": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "notifications.usercontact",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "channel": "telegram",
+    "value": "@test_user",
+    "priority": 1,
+    "is_active": true
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$H3RLCvXIzf3l0mZuX88gav$Gt8YvoGAu63vfjEqFTrRuU8EmL+xV8OAxA+xjKdnsIE=",
+    "last_login": "2025-11-18T11:57:07.462Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-18T11:56:43.710Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$GGFSKuiLLVs4fNrFIH5jX6$0SQxPfQNtE1TOYwPwLJMZWCV0GXn/TDzSm+eGVl+sdY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test_user",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-18T12:00:59.277Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
